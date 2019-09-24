@@ -1,0 +1,9 @@
+C:\Users\guilherme.brunholi\source\repos\FileReader\FileReader\bin\Debug\netcoreapp2.1\FileReader.deps.json
+C:\Users\guilherme.brunholi\source\repos\FileReader\FileReader\bin\Debug\netcoreapp2.1\FileReader.dll
+C:\Users\guilherme.brunholi\source\repos\FileReader\FileReader\obj\Debug\netcoreapp2.1\FileReader.csprojAssemblyReference.cache
+C:\Users\guilherme.brunholi\source\repos\FileReader\FileReader\obj\Debug\netcoreapp2.1\FileReader.csproj.CoreCompileInputs.cache
+C:\Users\guilherme.brunholi\source\repos\FileReader\FileReader\obj\Debug\netcoreapp2.1\FileReader.AssemblyInfoInputs.cache
+C:\Users\guilherme.brunholi\source\repos\FileReader\FileReader\obj\Debug\netcoreapp2.1\FileReader.AssemblyInfo.cs
+C:\Users\guilherme.brunholi\source\repos\FileReader\FileReader\bin\Debug\netcoreapp2.1\FileReader.pdb
+C:\Users\guilherme.brunholi\source\repos\FileReader\FileReader\obj\Debug\netcoreapp2.1\FileReader.dll
+C:\Users\guilherme.brunholi\source\repos\FileReader\FileReader\obj\Debug\netcoreapp2.1\FileReader.pdb
