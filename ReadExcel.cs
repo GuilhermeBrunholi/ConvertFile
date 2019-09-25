@@ -84,7 +84,6 @@ namespace FileReader
 
                 }
             }
-            //return list;
         }
 
         public void NameColumns(List<List<string>> list)
