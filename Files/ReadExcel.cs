@@ -31,7 +31,7 @@ namespace FileReader
             return treatedList;
         }
 
-        public List<List<string>> ReadTable(DataSet arq)
+        private List<List<string>> ReadTable(DataSet arq)
         {
             List<List<string>> listIndexs = new List<List<string>>();
             List<List<string>> listItems = new List<List<string>>();
@@ -69,7 +69,7 @@ namespace FileReader
             return finalList;
         }
 
-        public void TreatFile(List<List<string>> list)
+        private void TreatFile(List<List<string>> list)
         {
             for (int a = 1; a < list.Count; a++)
             {
@@ -87,7 +87,7 @@ namespace FileReader
             //return list;
         }
 
-        public void NameColumns(List<List<string>> list)
+        private void NameColumns(List<List<string>> list)
         {
             var items = list[0];
             for (int z = 0; z < items.Count; z++)
@@ -99,7 +99,7 @@ namespace FileReader
             }
         }
 
-        public List<IDictionary<string, string>> CreatNameList(List<List<string>> list)
+        private List<IDictionary<string, string>> CreatNameList(List<List<string>> list)
         {
             var indexs = list[0];
             List<List<string>> items = new List<List<string>>();
@@ -111,7 +111,7 @@ namespace FileReader
             return treated;
         }
 
-        public List<IDictionary<string, string>> NameIndexes(List<string> indexes, List<List<string>> listValues)
+        private List<IDictionary<string, string>> NameIndexes(List<string> indexes, List<List<string>> listValues)
         {
             List<IDictionary<string, string>> listFinal = new List<IDictionary<string, string>>();
             for (int y = 0; y < listValues.Count; y++)

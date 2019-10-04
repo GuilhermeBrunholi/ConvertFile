@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>FileReader</id>
+    <version>1.0.0</version>
+    <authors>FileReader</authors>
+    <owners>FileReader</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.1">
+        <dependency id="ExcelDataReader" version="3.6.0" exclude="Build,Analyzers" />
+        <dependency id="ExcelDataReader.DataSet" version="3.6.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Hosting" version="2.2.7" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="12.0.2" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Encoding.CodePages" version="4.5.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\guilherme.brunholi\source\repos\FileReader\FileReader\bin\Debug\netcoreapp2.1\FileReader.dll" target="lib\netcoreapp2.1\FileReader.dll" />
+  </files>
+</package>

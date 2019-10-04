@@ -7,7 +7,7 @@ namespace FileReader
     class ReadFile
     {
         // ler arquivos .csv e .txt
-        public List<IDictionary<string, string>> ReadFileCSV(string linkFile, string separator) // Pode ser usado tambem * DataSet arquivo *
+        public List<IDictionary<string, string>> ReadFileCSV(string linkFile, string separator)
         {
             List<string> rows = new List<string>();
             using (StreamReader sr = new StreamReader(linkFile))
@@ -39,7 +39,7 @@ namespace FileReader
             return content;
         }
 
-        private List<string> TreatIndexList(List<string> list)
+        private static List<string> TreatIndexList(List<string> list)
         {
             for (int i = 0; i < list.Count; i++)
             {
