@@ -14,7 +14,13 @@ namespace FileReader
             {
                 string contentFile = sr.ReadToEnd();
                 var contentList = contentFile.Split("\r\n").ToList();
-                contentList.RemoveAt(contentList.Count - 1);
+                var lastIndex = contentList.Count - 1;
+
+                if (string.IsNullOrEmpty(contentList[lastIndex]))
+                {
+                    contentList.RemoveAt(lastIndex);
+                }
+
                 for (int i = 0; i < contentList.Count; i++)
                 {
                     var list = contentList[i];
@@ -48,7 +54,7 @@ namespace FileReader
                     list[i] = "Column" + i;
                 }
             }
-            return list; 
+            return list;
         }
     }
 }

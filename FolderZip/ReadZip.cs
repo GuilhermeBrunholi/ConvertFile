@@ -4,19 +4,23 @@ using System.Linq;
 using FileReader.model;
 using System.IO.Compression;
 using System.Collections.Generic;
+using System.IO;
 
 namespace FileReader
 {
     class ReadZip
     {
         // Validar tipo de arquivo
-        public ModelReturn ReadPathZip(string localFile)
+        public ModelReturn ReadPathZip(string localFile, string localExtract)
         {
             string path;
             ModelReturn modelReturn = new ModelReturn();
             using (ZipArchive archive = ZipFile.Open(localFile, ZipArchiveMode.Update))
             {
-                path = localFile + @"\" + TreatFolder(archive);
+                var pathFolder = GenerateNameFolder(localExtract);
+                Directory.CreateDirectory(pathFolder);
+                archive.ExtractToDirectory(pathFolder);
+                path = pathFolder + @"\" + TreatFolder(archive);
                 if (path == null)
                 {
                     modelReturn.error = "file type is not allowed";
@@ -67,5 +71,13 @@ namespace FileReader
             }
             return listPath;
         }
+
+        private static string GenerateNameFolder(string localFolder)
+        {
+            var thisDay = DateTime.Now.ToString("yyyy-MM-dd hhmmss");
+            string name = localFolder + @"\" + thisDay;
+            return name;
+        }
+
     }
 }

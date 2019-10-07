@@ -32,7 +32,7 @@ namespace FileReader
             if (!string.IsNullOrEmpty(localPath) && (!string.IsNullOrEmpty(localExtract)) /*&& localPath.Contains(".zip")*/)
             {
                 ReadZip readZip = new ReadZip();
-                listPath = readZip.ReadPathZip(localPath);
+                listPath = readZip.ReadPathZip(localPath, localExtract);
                 return listPath;
             }
             else
